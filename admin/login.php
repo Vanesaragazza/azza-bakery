@@ -235,7 +235,7 @@ if (isset($_POST['submit'])) {
       background: var(--glass-bg);
       backdrop-filter: blur(28px) saturate(1.6);
       -webkit-backdrop-filter: blur(28px) saturate(1.6);
-      border: 1px solid var(--glass-border);
+      border: 2px solid var(--glass-border);
       border-radius: 28px;
       padding: 48px 44px;
       box-shadow:
