@@ -10,20 +10,33 @@
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
-    <h1 class="logo">Azza Bakery</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="navbar">
+
+  <h1 class="logo">
+   <span class="logo-white">Azza</span> Bakery
+  </h1>
+
+  <nav>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+
+  </nav>
+
+</header>
 
   <!-- Hero -->
-  <section class="hero">
+  <!-- Hero -->
+<section class="hero" id="home">
   <div class="hero-container">
     
     <!-- TEXT -->
@@ -42,7 +55,8 @@
 </section>
 
   <!-- Menu Section -->
-  <section class="menu">
+  <!-- Menu -->
+<section class="menu" id="menu">
     <h2>Our Menu</h2>
     <div class="menu-container">
 
@@ -136,13 +150,56 @@
     <p>Rating</p>
   </div>
 </section>
-<section class="contact">
+<section class="contact" id="contact">
   <h2>Visit Us</h2>
-  <p>Jl. Bakery No. 123, Indonesia</p>
-  <p>Open: 08.00 - 21.00</p>
+
+  <div class="contact-container">
+
+    <!-- KIRI -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015140.5233996323!2d107.765619165625!3d-6.343164199999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ebb445eb32f03%3A0x81a239f2fa2e1d92!2sAZZA%20BAKERY!5e0!3m2!1sid!2sid!4v1780386411802!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- KANAN -->
+    <div class="contact-info">
+
+      <h3>Contact Us</h3>
+
+      <p><strong>📍 Alamat:</strong><br>
+      Jl. Tj. Pura No.13, Kepandean, Indramayu</p>
+
+      <p><strong>📞 Telepon:</strong><br>
+      08xx-xxxx-xxxx</p>
+
+      <p><strong>✉ Email:</strong><br>
+      azzabakery@gmail.com</p>
+
+      <hr>
+
+      <h3>Customer Reviews</h3>
+
+      <!-- Elfsight Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+
+      <div
+        class="elfsight-app-a9145307-df05-4c0a-b7fc-3f9f10837acc"
+        data-elfsight-app-lazy>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
-<section class="about">
+<!-- About -->
+<section class="about-section" id="about">
   <div class="about-container">
 
     <!-- KIRI (GAMBAR) -->
@@ -181,6 +238,31 @@
 
   </div>
 </section>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h3>Apakah roti dibuat fresh setiap hari?</h3>
+    <p>Ya, semua roti dan pastry kami dibuat fresh setiap hari.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Apakah bisa custom cake?</h3>
+    <p>Tentu! Kami menerima pesanan custom cake sesuai keinginan pelanggan.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Apakah tersedia delivery?</h3>
+    <p>Ya, kami melayani pengiriman melalui ojek online dan kurir lokal.</p>
+  </div>
+
+</section>
+
+
 <!-- Footer -->
   <footer>
     <p>© 2026 Azza Bakery</p>

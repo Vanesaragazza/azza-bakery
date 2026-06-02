@@ -1,4 +1,7 @@
 /* RESET */
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +18,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 60px;
-  background: linear-gradient(to right, #f6a94d, #f39c3d);
+  background: linear-gradient(to right, brown, #f39c3d);
 }
 
 .logo {
@@ -28,13 +33,26 @@ body {
   font-weight: bold;
 }
 
+.logo-white{
+    color: white;
+}
+
+.logo{
+    color: darkred;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* MENU */
 .navbar ul {
   display: flex;
   list-style: none;
-}
-
-.navbar ul li {
-  margin-left: 25px;
+  gap: 20px;
 }
 
 .navbar ul li a {
@@ -45,9 +63,23 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #ff5500;
+  color:  brown;
 }
 
+/* CART */
+.cart-icon {
+  background: brown;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
 /* HERO */
 .hero {
   position: relative;
@@ -85,7 +117,7 @@ body {
 
 .hero-left button {
   padding: 12px 25px;
-  background: #ff7a00;
+  background: brown;
   color: white;
   border: none;
   border-radius: 8px;
@@ -95,7 +127,7 @@ body {
 
 .hero-left button:hover {
   transform: scale(1.05);
-  background: #ff5500;
+  background: brown;
 }
 
 /* IMAGE */
@@ -223,7 +255,7 @@ body {
   justify-content: center;
   gap: 50px;
   padding: 60px;
-  background: #ffb347;
+  background: brown;
   color: white;
   text-align: center;
 }
@@ -243,7 +275,7 @@ body {
 
 /* FOOTER */
 footer {
-  background: #ffb347;
+  background: brown;
   color: white;
   padding: 30px;
   text-align: center;
@@ -326,4 +358,161 @@ footer {
   position: absolute;
   left: 0;
   color: #a52a2a;
+}
+
+/* CART */
+.cart-icon {
+  background: brown;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 50px;
+  background: #fff8f0;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 42px;
+  color: #a52a2a;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.faq-item h3 {
+  color: #a52a2a;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#faq {
+  scroll-margin-top: 120px;
+}
+
+.map-container {
+  max-width: 900px;
+  margin: 30px auto 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  display: block;
+}
+
+.contact {
+  padding: 80px 50px;
+  background: #fff0e0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #a52a2a;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-map {
+  flex: 1;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  color: #a52a2a;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.contact {
+  padding: 80px 50px;
+  background: #fff0e0;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #a52a2a;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-map {
+  flex: 1.2;
+}
+
+.contact-map iframe {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.contact-info {
+  flex: 0.8;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact-info h3 {
+  color: #a52a2a;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.contact-info hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
 }
